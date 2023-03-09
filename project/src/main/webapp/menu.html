@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+	body{
+		margin: 0;
+	}
+		
+		header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+	padding-left: 2%;
+    padding-right: 2%;
+    width: 93%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo
+{
+   width: 10%;
+   padding-left: 0;
+
+}
+
+header ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+            .dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+   
+  display: block;
+}
+
+	</style>
+</head>
+<body>
+  <header>
+                <a href="/Generation.html" class="logo" target="_blank">
+                <img src="Logo2.png">
+                </a>
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/utenti/elencoutenti">Elenco</a></li>
+                    <li><a href="/utenti/formnuovoutente">New</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <span class="caret"></span></a>
+                      <ul class="dropdown-menu" style="bottom: 60%;">
+                        <li><a href="/">Italiano</a></li>
+                        <li><a href="/en.html">Inglese</a></li>
+                        <li><a href="/fr.html">Francese</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </header>
+  
+</body>
+</html>

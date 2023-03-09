@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Home</title>
+		<!--<link rel="stylesheet" type="text/css" href="foglioDiStile.css">-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+            @import url('https://fonts.cdnfonts.com/css/casino-bar');
+            </style>
+        <link href="https://fonts.cdnfonts.com/css/casino-bar" rel="stylesheet">
+        <script src="jquery.min.js"></script>
+
+	</head>
+	<body>
+        <body>
+            <header>
+                <a href="/Generation.html" class="logo" target="_blank">
+                <img src="Logo2.png">
+                </a>
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/utenti/elencoutenti">Elenco</a></li>
+                    <li><a href="/utenti/formnuovoutente">New</a></li>  
+                    <li><a href="#">Language</a></li>
+                </ul>
+            </header>
+          
+        </body>
+		   <section>
+        <img src="montagne.png" id="mountains_behind">
+        <img src="suny.png" id="sun">
+        
+        <h2 id="text" style="font-family: 'Casino Bar', sans-serif;-webkit-text-stroke: 0.1px rgb(255, 255, 255); color: blue;opacity:0.8">
+        EASYBANK    
+           </h2>
+        
+        <img src="nuvole.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2 style="font: Timew New Romans;">Easy Bank</h2>
+        <p>Stanco della solita monotonia lavorativa? Easy bank e' il sofware che fa per te.<br>
+        La sua grafica gioconda e sprizzante miglioreranno le tue giornata. Sara' un piacere creare, modificare, leggere ed eliminare il conto corrente degli utenti.</p>
+       
+    </div>
+	    <script>
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let mountains_front = document.getElementById('mountains_front');
+        let sun= document.getElementById('sun');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0+ 'px';
+            text.style.marginRight = value * 10 + 'px';
+            text.style.marginTop = value * 2.5 + 'px';
+            sun.style.marginTop = value* 2 + 'px';
+           
+           
+
+        });
+    </script>
+	</body>
+</html>

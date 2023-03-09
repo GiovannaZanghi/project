@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.cdnfonts.com/css/stardust-adventure" rel="stylesheet">          
+    <title>Document</title>
+</head>
+<style>
+ @import url('https://fonts.cdnfonts.com/css/stardust-adventure');
+ *{
+    padding: 0;
+ }    
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.g{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, 15%);
+    width: 60%;
+}
+h1{ 
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    font-family: 'Stardust Adventure', sans-serif;
+    font-size: 80px;
+}
+.tk{
+ width: 20%;
+ position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -480%);
+
+}
+</style>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="vb.mp4" type="video/mp4">
+    </video>
+    <img src="Grazie.png" class="tk">
+   <!-- <h1>Grazie Generation!!!</h1>-->
+    <img src="Generation.png" class="g">
+</body>
+</html>

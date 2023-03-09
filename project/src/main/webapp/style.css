@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* 
+{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#ff4d00,#a5a7aa);
+    margin: 0;
+}
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: ''; /* Se si toglie questo si toglie la trasparenza*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#f1450c,transparent); /* Rettangolo in basso tra testo e immagini*/
+    z-index: 1000;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon
+{ /* ha fuso le ombre*/
+    mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+    z-index: 10;
+
+}
+#text
+{
+    position: absolute;
+    white-space: nowrap;                                         /* nowrap???*/
+    font-size: 7.5vw;
+                                                                /*cercare cosa significa vw e em*/
+    z-index: 9;
+    right: 0%;
+    top: 15%;
+}
+
+#sun
+{
+    position: absolute;
+    top:-20%;
+    display: inline-block;                                      /* CHE COSA FA???*/
+    z-index: 9;
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #f1450c;
+
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #fff; 
+
+}
+header
+{
+    position: absolute;
+    top: -6%;
+    left: 0;
+	padding-left: 2%;
+    padding-right: 2%;
+    width: 93%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo
+{
+   width: 10%;
+   padding-left: 0;
+
+}
+
+header ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+
+
